@@ -34,7 +34,7 @@ vim.opt.wrap = true                             -- display lines as one long lin
 vim.opt.scrolloff = 8                           -- is one of my fav
 vim.opt.sidescrolloff = 8
 vim.opt.guifont = "Iosevka Nerd Font Mono:h10"               -- the font used in graphical neovim applications
-vim.opt.shell = "pwsh.exe"
+vim.opt.shell = "cmd.exe"                       -- using pwsh.exe breaks external commands
 vim.opt.relativenumber = true
 
 vim.opt.shortmess:append "c"
