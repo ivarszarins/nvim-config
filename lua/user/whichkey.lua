@@ -154,11 +154,17 @@ local mappings = {
     C = { "<cmd>Telescope commands<cr>", "Commands" },
   },
   h = {
-    name = "harpoon",
+    name = "Harpoon",
     a = { "<cmd>lua require 'harpoon.mark'.add_file()<cr>", "Add file to harpoon" },
     r = { "<cmd>lua require 'harpoon.mark'.rm_file()<cr>", "Remove file from harpoon" },
     l = { "<cmd>Telescope harpoon marks<cr>", "Toggle quick menu" },
   },
+  r = {
+    name = "Rest http client",
+    x = { "<Plug>RestNvim", "Execute request" },
+    p = { "<Plug>RestNvimPreview", "Execute request" },
+    l = { "<Plug>RestNvimLast", "Execute request" },
+  }
 }
 
 which_key.setup(setup)

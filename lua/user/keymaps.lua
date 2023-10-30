@@ -37,6 +37,7 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<leader>bd", ":bd<CR>", opts) -- buffer delete
+keymap("n", "<leader>q", ":q<CR>", opts) -- quit the window
 
 -- Make j/k visual down and up instead of whole lines. This makes wordas dlfkajs dflkajsd flkasdj f wrapping a lot more pleasent.
 keymap("n", "j", "gj", opts)
@@ -45,6 +46,8 @@ keymap("n", "k", "gk", opts)
 -- Insert --
 
 -- Visual --
+keymap("v", "<leader>p", "\"_dP", opts)
+
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
