@@ -56,6 +56,7 @@ return packer.startup(function(use)
 
   -- Colorschemes
   use "dracula/vim" -- colorscheme dracula
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   -- cmd
   use "MunifTanjim/nui.nvim"
