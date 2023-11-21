@@ -1,20 +1,5 @@
-require "user.impatient"
-require "user.options"
-require "user.keymaps"
-require "user.plugins"
-require "user.colorscheme"
-require "user.cmp"
-require "user.lsp.init"
-require "user.treesitter"
-require "user.autopairs"
-require "user.comment"
-require "user.gitsigns"
-require "user.telescope"
-require "user.lualine"
-require "user.nvimtree"
-require "user.indentline"
-require "user.whichkey"
-require "user.noice"
-require "user.notify"
-require "user.harpoon"
-require "user.rest"
+-- ensure we can require files from without after/plugin-folder
+local home_dir = os.getenv("HOME")
+package.path = home_dir .. "/.config/nvim/after/plugin/?.lua;" .. package.path
+
+require("ivars")
