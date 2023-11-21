@@ -2,7 +2,9 @@ local servers = {
   "lua_ls",
 	"jsonls",
   "csharp_ls",
-  "gopls"
+  "gopls",
+  "dockerls",
+  "docker_compose_language_service"
 }
 
 local settings = {

@@ -33,7 +33,8 @@ vim.opt.signcolumn = "yes"                      -- always show the sign column, 
 vim.opt.wrap = true                             -- display lines as one long line
 vim.opt.scrolloff = 8                           -- is one of my fav
 vim.opt.sidescrolloff = 8
-vim.opt.guifont = "Iosevka Nerd Font Mono:h10"               -- the font used in graphical neovim applications
+-- vim.opt.guifont = "Iosevka Nerd Font Mono:h10"               -- the font used in graphical neovim applications
+vim.opt.guifont = "Geist Mono:h10"               -- the font used in graphical neovim applications
 vim.opt.shell = "cmd.exe"                       -- using pwsh.exe breaks external commands
 vim.opt.relativenumber = true
 
