@@ -158,6 +158,10 @@ local mappings = {
     a = { "<cmd>lua require 'harpoon.mark'.add_file()<cr>", "Add file to harpoon" },
     r = { "<cmd>lua require 'harpoon.mark'.rm_file()<cr>", "Remove file from harpoon" },
     l = { "<cmd>Telescope harpoon marks<cr>", "Toggle quick menu" },
+    ["1"] = { "<cmd>lua require 'harpoon.ui'.nav_file(1)<cr>", "Go to file 1" },
+    ["2"] = { "<cmd>lua require 'harpoon.ui'.nav_file(2)<cr>", "Go to file 2" },
+    ["3"] = { "<cmd>lua require 'harpoon.ui'.nav_file(3)<cr>", "Go to file 3" },
+    ["4"] = { "<cmd>lua require 'harpoon.ui'.nav_file(4)<cr>", "Go to file 4" },
   },
   r = {
     name = "Rest http client",
