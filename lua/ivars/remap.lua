@@ -43,6 +43,13 @@ keymap("n", "<leader>q", ":q<CR>", opts) -- quit the window
 keymap("n", "j", "gj", opts)
 keymap("n", "k", "gk", opts)
 
+-- keep centered
+keymap("n", "J", "mzJ`z", opts)
+keymap("n", "<C-d>", "<C-d>zz", opts)
+keymap("n", "<C-u>", "<C-u>zz", opts)
+keymap("n", "n", "nzzzv", opts)
+keymap("n", "N", "Nzzzv", opts)
+
 -- Insert --
 
 -- Visual --
