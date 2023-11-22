@@ -20,7 +20,8 @@ vim.opt.swapfile = false                        -- creates a swapfile
 vim.opt.termguicolors = true                    -- set term gui colors (most terminals support this)
 vim.opt.timeoutlen = 1000                       -- time to wait for a mapped sequence to complete (in milliseconds)
 vim.opt.undofile = true                         -- enable persistent undo
-vim.opt.updatetime = 300                        -- faster completion (4000ms default)
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.updatetime = 50                         -- faster completion (4000ms default)
 vim.opt.writebackup = false                     -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
 vim.opt.expandtab = true                        -- convert tabs to spaces
 vim.opt.shiftwidth = 2                          -- the number of spaces inserted for each indentation
@@ -30,13 +31,14 @@ vim.opt.number = true                           -- set numbered lines
 vim.opt.relativenumber = false                  -- set relative numbered lines
 vim.opt.numberwidth = 4                         -- set number column width to 2 {default 4}
 vim.opt.signcolumn = "yes"                      -- always show the sign column, otherwise it would shift the text each time
-vim.opt.wrap = true                             -- display lines as one long line
+vim.opt.wrap = false                            -- display lines as one long line
 vim.opt.scrolloff = 8                           -- is one of my fav
 vim.opt.sidescrolloff = 8
 -- vim.opt.guifont = "Iosevka Nerd Font Mono:h10"               -- the font used in graphical neovim applications
 vim.opt.guifont = "Geist Mono:h10"               -- the font used in graphical neovim applications
 vim.opt.shell = "cmd.exe"                       -- using pwsh.exe breaks external commands
 vim.opt.relativenumber = true
+--vim.opt.colorcolumn = "80"
 
 vim.opt.shortmess:append "c"
 
