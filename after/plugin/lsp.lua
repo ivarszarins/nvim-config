@@ -41,7 +41,7 @@ lsp.on_attach(function(client, bufnr)
   vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
-lsp.setup()
+-- lsp.setup()
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
@@ -75,3 +75,6 @@ require('mason-lspconfig').setup({
 vim.diagnostic.config({
     virtual_text = true
 })
+
+-- vim.lsp.set_log_level("debug")
+
