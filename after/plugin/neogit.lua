@@ -3,4 +3,6 @@ if not status_ok then
   return
 end
 
-neogit.setup {}
+neogit.setup {
+  graph_style = "unicode" -- ascii/unicode
+}
