@@ -98,7 +98,7 @@ return packer.startup(function(use)
 
   -- Git
   use "lewis6991/gitsigns.nvim"
-  use "kdheepak/lazygit.nvim"
+  -- use "kdheepak/lazygit.nvim"
   use "tpope/vim-fugitive"
   use "NeogitOrg/neogit"
   use "sindrets/diffview.nvim"
