@@ -101,6 +101,7 @@ return packer.startup(function(use)
   use "kdheepak/lazygit.nvim"
   use "tpope/vim-fugitive"
   use "NeogitOrg/neogit"
+  use "sindrets/diffview.nvim"
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
