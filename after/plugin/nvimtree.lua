@@ -6,4 +6,13 @@ if not status_ok then
     return
 end
 
-nvim_tree.setup()
+nvim_tree.setup{
+  view = {
+    preserve_window_proportions = false
+  },
+  actions = {
+    open_file = {
+      resize_window = false
+    }
+  }
+}
