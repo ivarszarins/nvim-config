@@ -171,6 +171,12 @@ local mappings = {
     x = { "<Plug>RestNvim", "Execute request" },
     p = { "<Plug>RestNvimPreview", "Execute request" },
     l = { "<Plug>RestNvimLast", "Execute request" },
+  },
+  m = {
+    name = "Noice messages",
+    l = { "<cmd>NoiceLast<cr>", "Show the last message"},
+    d = { "<cmd>NoiceDismiss<cr>", "Dismiss messages"},
+    h = { "<cmd>NoiceHistory<cr>", "Message history"},
   }
 }
 

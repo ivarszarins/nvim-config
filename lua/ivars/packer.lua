@@ -107,9 +107,6 @@ return packer.startup(function(use)
   use "nvim-telescope/telescope.nvim"
   use 'nvim-telescope/telescope-media-files.nvim'
 
-  -- Rest client
-  use "rest-nvim/rest.nvim"
-
   use "folke/zen-mode.nvim"
 
   use("mbbill/undotree")
