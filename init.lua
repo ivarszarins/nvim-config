@@ -93,7 +93,7 @@ vim.g.maplocalleader = ' '
 -- Set to true if you have a Nerd Font installed
 vim.g.have_nerd_font = true
 
-vim.api.nvim_exec('language en_US', true)
+vim.api.nvim_exec('language en_US.UTF-8', true)
 
 -- [[ Setting options ]]
 -- See `:help vim.opt`
